@@ -1,0 +1,63 @@
+<html lang="en">
+
+<head>
+
+
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <header class="head py-2">
+        <div class="container">
+            <h1 class=" text-muted p-5 fw-bolder">Bookmark</h1>
+            <hr>
+        </div>
+    </header>
+
+    <section class="body py-5">
+        <div class="container">
+            <div class="content w-75 py-3 row text-center m-auto gy-3">
+                <h2 class="py-2">Bookmark your favorite sites</h2>
+                <div class="nameData">
+                    <label for="name" class="w-100 fw-bold py-1">Site Name</label>
+                    <input id="name" class="w-75 rounded" type="text" placeholder='Bookmark Name'>
+                </div>
+                <div class="urlData">
+                    <label for="url" class="w-100 fw-bold py-1">Site URL</label>
+                    <input id="url" class="w-75 rounded" type="text" placeholder='Website URL ( Example : https://www.website.com )'>
+                </div>
+                <div class="buttons d-flex justify-content-center">
+                    <div class="submit" style="display: block;" id="submit">
+                        <button class="btn btn-primary py-2 px-3 my-2" onclick="addBookmark()">Submit</button>
+                    </div>
+                    <div class="submit mx-2 my-2" style="display: none;" id="submitEdit">
+                        <button class="btn btn-warning py-2 px-3" onclick="edit()">Submit Edit</button>
+                    </div>
+                    <div class="submit mx-2 my-2" style="display: none;" id="cancel">
+                        <button class="btn btn-danger py-2 px-3 " onclick="cancel()">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="data">
+        <div class="container" id="dataContainer">
+
+        </div>
+    </section>
+
+
+
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.data .content {
+    background-image: linear-gradient(#EEE, #FFF);
+    margin: 10px 0;
+    padding: 20px;
+}
+
+.data .content .ancor,
+.data .content h2 {
+    width: fit-content;
+}
+
+.body .content {
+    background-color: #EEE;
+    border: none;
+    text-align: center;
+    padding: 30px;
+}
+
+.body .content input {
+    border: none;
+    padding: 5px 0 5px 10px;
+}
+
+a:hover,
+button:hover {
+    box-shadow: 0px 0px 15px #000000ad;
+}
+
+.image {
+    width: 40px;
+    margin-right: 10px;
+}
+
+#submit,
+#submitData,
+#cancel {
+    width: fit-content;
+}
